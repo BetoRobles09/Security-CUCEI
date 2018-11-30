@@ -16,7 +16,7 @@ public class actionScript : MonoBehaviour {
         elapsed += Time.fixedDeltaTime;
         transform.position += transform.forward * speed * Time.fixedDeltaTime;
 
-        if(elapsed > 5)
+        if(elapsed > 1)
         {
             GameObject.Destroy(gameObject);
         }

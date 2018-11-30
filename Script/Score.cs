@@ -11,15 +11,16 @@ public class Score : MonoBehaviour {
 	void Start () {
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    void Update () {
         txt.text = "Score: " + score;
-        if (score == 70)
+        if (score == 100)
         {
             txt.text = "Ganaste!";
-            Scene scene = SceneManager.GetActiveScene();
-            SceneManager.LoadScene(scene.name);
+        }
+        if (Input.GetButtonDown("Fire2"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 
